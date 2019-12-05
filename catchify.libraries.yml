@@ -1,0 +1,19 @@
+catchify:
+  version: 0.0
+  css:
+    base:
+      build/styles.css: {}
+  js:
+    build/bundle.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+materializecss:
+  version: 1.0.0
+  css:
+    base:
+      node_modules/materialize-css/dist/css/materialize.min.css: {}
+  js:
+    node_modules/materialize-css/dist/js/materialize.min.js: {}

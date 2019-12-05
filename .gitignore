@@ -1,0 +1,4 @@
+# This file contains default .gitignore rules for catchify drupal theme.
+node_modules
+npm-debug.log
+build

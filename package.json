@@ -1,0 +1,34 @@
+{
+  "name": "iq-student-accommodation",
+  "version": "1.0.0",
+  "description": "IQ Student Accommodation Drupal theme",
+  "scripts": {
+    "build": "npm run format:css && npm run build:css && npm run format:js && npm run build:js",
+    "format:css": "node ./node_modules/catchify/scripts/format.js ./node_modules './sass/**/*.scss'",
+    "build:css": "node ./node_modules/catchify/scripts/css.js ./node_modules ./sass/styles.scss ./build ./build/styles.css",
+    "format:js": "node ./node_modules/catchify/scripts/format.js ./node_modules './js/**/*.js'",
+    "build:js": "node ./node_modules/catchify/scripts/js.js ./node_modules ./js/index.js ./build/bundle.js",
+    "build:prod": "npm install && npm run build",
+    "watch": "echo \"Set up chokidar watch script here\""
+  },
+  "author": "support@catchdigital.com",
+  "license": "MIT",
+  "dependencies": {
+    "catchify": "github:catchdigital/catchify#2.0.0",
+    "chokidar": "^2.0.0",
+    "materialize-css": "^1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "stage-3"
+          ]
+        }
+      ]
+    ]
+  }
+}
