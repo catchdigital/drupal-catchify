@@ -1,7 +1,7 @@
 {
-  "name": "iq-student-accommodation",
+  "name": "catchify",
   "version": "1.0.0",
-  "description": "IQ Student Accommodation Drupal theme",
+  "description": "Catchify theme",
   "scripts": {
     "build": "npm run format:css && npm run build:css && npm run format:js && npm run build:js",
     "format:css": "node ./node_modules/catchify/scripts/format.js ./node_modules './sass/**/*.scss'",
