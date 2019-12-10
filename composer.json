@@ -11,11 +11,11 @@
             "email": "a.contreras@catchdigital.com"
         }
     ],
-    "repositories": {
-      "drupal_org": {
+    "repositories": [
+      {
         "type": "git",
         "url": "https://github.com/catchdigital/drucker"
       }
-    },
+    ],
     "require": {}
 }
