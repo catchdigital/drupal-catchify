@@ -1,7 +1,7 @@
 {
     "name": "catchdigital/drupal-catchify",
     "description": "Catchify Drupal theme which implement Catchify core",
-    "type": "drupal-custom-theme",
+    "type": "drupal-theme",
     "license": "MIT",
     "authors": [
         {
