@@ -1,0 +1,13 @@
+{
+    "name": "catchdigital/drupal-catchify",
+    "description": "Catchify Drupal theme which implement Catchify core",
+    "type": "drupal-custom-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alberto Contreras",
+            "email": "a.contreras@catchdigital.com"
+        }
+    ],
+    "require": {}
+}
