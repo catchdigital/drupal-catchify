@@ -4,6 +4,7 @@
     "type": "drupal-theme",
     "license": "MIT",
     "minimum-stability": "dev",
+    "version": 0.0.1,
     "authors": [
         {
             "name": "Alberto Contreras",
