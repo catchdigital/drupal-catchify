@@ -4,13 +4,29 @@
     "type": "drupal-theme",
     "license": "MIT",
     "minimum-stability": "dev",
-    "prefer-stable": true,
     "authors": [
         {
             "name": "Alberto Contreras",
             "email": "a.contreras@catchdigital.com"
         }
     ],
+    "scripts": {
+      "remove-git-submodules" : "find . -mindepth 2 -type d -name .git | xargs rm -rf",
+      "pre-install-cmd": [
+        "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+      ],
+      "pre-update-cmd": [
+        "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+      ],
+      "post-install-cmd": [
+        "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+        "@remove-git-submodules"
+      ],
+      "post-update-cmd": [
+        "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+        "@remove-git-submodules"
+      ]
+    },
     "repositories": [
       {
         "type": "git",
