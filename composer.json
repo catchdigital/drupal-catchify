@@ -1,20 +1,27 @@
 {
-  "name": "catchdigital/drupal-catchify",
-  "description": "Catchify Drupal theme which implement Catchify core",
-  "type": "drupal-theme",
-  "license": "MIT",
-  "minimum-stability": "dev",
-  "authors": [
-    {
-      "name": "Alberto Contreras",
-      "email": "a.contreras@catchdigital.com"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/catchdigital/drupal-catchify"
-    }
-  ],
-  "require": {}
+    "name": "catchdigital/drupal-catchify",
+    "description": "Catchify Drupal theme which implement Catchify core",
+    "type": "drupal-theme",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Alberto Contreras",
+            "email": "a.contreras@catchdigital.com"
+        }
+    ],
+    "repositories": [
+      {
+        "type": "git",
+        "url": "https://github.com/catchdigital/drupal-catchify"
+      }
+    ],
+    "post-install-cmd": [
+      "npm install"
+    ],
+    "post-update-cmd": [
+      "npm update"
+    ],
+    "require": {}
 }
