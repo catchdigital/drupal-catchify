@@ -18,11 +18,11 @@
       }
     ],
     "post-install-cmd": [
-      "echo Installing Catchify requirements",
+      "echo \"Installing Catchify requirements\"",
       "npm install"
     ],
     "post-update-cmd": [
-      "echo Updating Catchify requirements",
+      "echo \"Updating Catchify requirements\"",
       "npm update"
     ],
     "require": {}

@@ -14,5 +14,7 @@ stylesheets-remove:
 features:
   - favicon
 libraries:
-  - catchify/catchify
-  - catchify/materializecss
+  - catchify/catchify-core
+  - catchify/catchify-form
+  - catchify/catchify-tabs
+  - catchify/catchify-buttons
