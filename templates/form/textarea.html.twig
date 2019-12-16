@@ -13,4 +13,8 @@
  * @see template_preprocess_textarea()
  */
 #}
-<textarea{{ attributes.addClass('materialize-textarea') }}>{{ value }}</textarea>
+{% if attributes.placeholder|render is empty %}
+  <textarea{{ attributes.addClass('materialize-textarea')|without('placeholder') }}>{{ value }}</textarea>
+{% else %}
+  <textarea{{ attributes.addClass('materialize-textarea') }}>{{ value }}</textarea>
+{% endif %}
