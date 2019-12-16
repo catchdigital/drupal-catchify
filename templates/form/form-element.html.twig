@@ -44,7 +44,12 @@
  * @see template_preprocess_form_element()
  */
 #}
-{% set label_display = type == 'select' ? 'after' : label_display %}
+{#
+  /**
+   * TODO: Materialize support only label after the input.
+   *       Setting here until we put a solution for before labels.
+ #}
+{% set label_display = 'after' %}
 {%
   set classes = [
     'js-form-item',
@@ -96,3 +101,10 @@
     </span>
   {% endif %}
 </div>
+
+{% if type == 'textarea' %}
+  <div class="input-field col s12">
+    <textarea id="textarea1" class="materialize-textarea"></textarea>
+    <label for="textarea1">Textarea</label>
+  </div>
+{% endif %}
