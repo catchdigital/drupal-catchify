@@ -52,7 +52,8 @@
     }
   },
   "dependencies": {
-    "@babel/polyfill": "^7.6.0"
+    "@babel/polyfill": "^7.6.0",
+    "materialize-css": "^1.0.0-rc.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
