@@ -61,7 +61,8 @@
     title_display == 'inline' ? 'inline',
     disabled == 'disabled' ? 'form-disabled',
     errors ? 'form-item--error',
-    'input-field'
+    'input-field',
+    'file-field'
   ]
 %}
 {%
@@ -72,9 +73,6 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {% if label_display in ['before', 'invisible'] %}
-    {{ label }}
-  {% endif %}
   {% if prefix is not empty %}
     <span class="field-prefix">{{ prefix }}</span>
   {% endif %}
@@ -83,12 +81,15 @@
       {{ description.content }}
     </div>
   {% endif %}
-  {{ children }}
+  <div class="btn">
+    <span>{{ label['#title'] }}</span>
+    {{ children }}
+  </div>
+  <div class="file-path-wrapper">
+    <input class="file-path validate" type="text">
+  </div>
   {% if suffix is not empty %}
     <span class="field-suffix">{{ suffix }}</span>
-  {% endif %}
-  {% if label_display == 'after' %}
-    {{ label }}
   {% endif %}
   {% if errors %}
     <div class="form-item--error-message">

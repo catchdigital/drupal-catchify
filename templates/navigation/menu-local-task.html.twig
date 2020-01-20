@@ -14,4 +14,22 @@
  * @see template_preprocess_menu_local_task()
  */
 #}
-<li{{ attributes }}>{{ link }}</li>
+{% set classes = [
+  is_active ? 'active',
+  'tab',
+  'col-sm'
+] %}
+
+{# If active, add active class to link #}
+{% if is_active %}
+  {% set class = link['#options']|merge({
+    'attributes': {
+      'class': [
+        'active'
+      ]
+    }
+  }) %}
+  {% set link = link|merge({ ('#options'): class}) %}
+{% endif %}
+
+<li{{ attributes.addClass(classes) }}>{{ link }}</li>

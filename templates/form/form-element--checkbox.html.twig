@@ -44,12 +44,7 @@
  * @see template_preprocess_form_element()
  */
 #}
-{#
-  /**
-   * TODO: Materialize support only label after the input.
-   *       Setting here until we put a solution for before labels.
- #}
-{% set label_display = 'after' %}
+{% set label_display = type == 'select' ? 'after' : label_display %}
 {%
   set classes = [
     'js-form-item',
@@ -72,9 +67,6 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {% if label_display in ['before', 'invisible'] %}
-    {{ label }}
-  {% endif %}
   {% if prefix is not empty %}
     <span class="field-prefix">{{ prefix }}</span>
   {% endif %}
@@ -83,12 +75,14 @@
       {{ description.content }}
     </div>
   {% endif %}
-  {{ children }}
+  <p>
+    <label {{ label['#attributes'] }} id={{ label['#id'] }}>
+      {{ children }}
+      <span>{{ label['#title'] }}</span>
+    </label>
+  </p>
   {% if suffix is not empty %}
     <span class="field-suffix">{{ suffix }}</span>
-  {% endif %}
-  {% if label_display == 'after' %}
-    {{ label }}
   {% endif %}
   {% if errors %}
     <div class="form-item--error-message">
