@@ -14,7 +14,7 @@
   "author": "support@catchdigital.com",
   "license": "MIT",
   "dependencies": {
-    "catchify-core": "^3.0.4",
+    "catchify-core": "^3.0.5",
     "chokidar": "^2.0.0"
   },
   "browserify": {
