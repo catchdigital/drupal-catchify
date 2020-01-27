@@ -25,10 +25,5 @@
       "echo \"Updating Catchify requirements\"",
       "npm update"
     ],
-    "require": {},
-    "autoload": {
-        "psr-0": {
-            "drupal-catchify": "src/"
-        }
-    }
+    "require": {}
 }
