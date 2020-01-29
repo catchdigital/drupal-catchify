@@ -39,3 +39,11 @@ catchify-buttons:
     node_modules/catchify-core/dist/buttons.js: {}
   dependencies:
     - catchify/catchify-core
+
+catchify-messages:
+  version: 3.0.10
+  css:
+    base:
+      node_modules/catchify-core/dist/_messages.css: {}
+  dependencies:
+    - catchify/catchify-core
