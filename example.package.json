@@ -2,6 +2,8 @@
   "name": "example-catchify-theme",
   "version": "0.0.0",
   "description": "Example package json for catchify child theme",
+  "author": "support@catchdigital.com",
+  "license": "MIT",
   "scripts": {
     "build": "npm-run-all -s build:*",
     "prebuild:css": "npm run format:css",
@@ -15,11 +17,13 @@
     "watch:css": "chokidar $npm_package_config_styles_directory -c 'npm run build:css' --initial",
     "start": "npm-run-all -p watch:*"
   },
-  "author": "support@catchdigital.com",
-  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
     "autoprefixer": "^9.5.1",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
     "browserify": "^16.2.2",
     "chokidar-cli": "^1.2.1",
     "eslint": "^4.19.1",
@@ -50,7 +54,9 @@
       [
         "babelify",
         {
-          "presets": "es2015"
+          "presets": [
+            "@babel/preset-env"
+          ]
         }
       ]
     ]
