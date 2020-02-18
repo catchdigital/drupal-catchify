@@ -1,5 +1,5 @@
 catchify-core:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_base.css: {}
@@ -11,7 +11,7 @@ catchify-core:
     - core/drupalSettings
 
 catchify-form:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_forms.css: {}
@@ -21,7 +21,7 @@ catchify-form:
     - catchify/catchify-core
 
 catchify-tabs:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_tabs.css: {}
@@ -31,7 +31,7 @@ catchify-tabs:
     - catchify/catchify-core
 
 catchify-buttons:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_buttons.css: {}

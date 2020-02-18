@@ -13,7 +13,7 @@
   "author": "support@catchdigital.com",
   "license": "MIT",
   "dependencies": {
-    "catchify-core": "^3.0.7"
+    "catchify-core": "^3.0.10"
   },
   "browserify": {
     "transform": [
