@@ -8,14 +8,12 @@
     "build:css": "node ./node_modules/catchify-core/scripts/css.js ./node_modules ./sass/styles.scss ./build ./build/styles.css",
     "format:js": "node ./node_modules/catchify-core/scripts/format.js ./node_modules './js/**/*.js'",
     "build:js": "node ./node_modules/catchify-core/scripts/js.js ./node_modules ./js/index.js ./build/bundle.js",
-    "build:prod": "npm install && npm run build",
-    "watch": "echo \"Set up chokidar watch script here\""
+    "build:prod": "npm install && npm run build"
   },
   "author": "support@catchdigital.com",
   "license": "MIT",
   "dependencies": {
-    "catchify-core": "^3.0.7",
-    "chokidar": "^2.0.0"
+    "catchify-core": "^3.0.10"
   },
   "browserify": {
     "transform": [

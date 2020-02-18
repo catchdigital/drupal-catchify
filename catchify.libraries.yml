@@ -1,18 +1,17 @@
 catchify-core:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_base.css: {}
   js:
     node_modules/catchify-core/dist/bundle.js: {}
-    node_modules/catchify-core/dist/base.js: {}
   dependencies:
     - core/jquery
     - core/drupal
     - core/drupalSettings
 
 catchify-form:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_forms.css: {}
@@ -22,7 +21,7 @@ catchify-form:
     - catchify/catchify-core
 
 catchify-tabs:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_tabs.css: {}
@@ -32,11 +31,19 @@ catchify-tabs:
     - catchify/catchify-core
 
 catchify-buttons:
-  version: 3.0.7
+  version: 3.0.10
   css:
     base:
       node_modules/catchify-core/dist/_buttons.css: {}
   js:
     node_modules/catchify-core/dist/buttons.js: {}
+  dependencies:
+    - catchify/catchify-core
+
+catchify-messages:
+  version: 3.0.10
+  css:
+    base:
+      node_modules/catchify-core/dist/_messages.css: {}
   dependencies:
     - catchify/catchify-core

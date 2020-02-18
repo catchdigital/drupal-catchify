@@ -1,0 +1,9 @@
+.btn {
+  color: #ffffff;
+  background-color: $colour-primary;
+
+  &--alt {
+    color: $colour-primary;
+    background-color: #ffffff;
+  }
+}

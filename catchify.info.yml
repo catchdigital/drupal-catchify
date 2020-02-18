@@ -18,3 +18,4 @@ libraries:
   - catchify/catchify-form
   - catchify/catchify-tabs
   - catchify/catchify-buttons
+  - catchify/catchify-messages
