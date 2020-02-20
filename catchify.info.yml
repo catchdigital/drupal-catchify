@@ -19,3 +19,4 @@ libraries:
   - catchify/catchify-tabs
   - catchify/catchify-buttons
   - catchify/catchify-messages
+  - catchify/catchify-modal
