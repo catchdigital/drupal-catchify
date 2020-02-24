@@ -20,3 +20,4 @@ libraries:
   - catchify/catchify-buttons
   - catchify/catchify-messages
   - catchify/catchify-modal
+  - catchify/catchify-carousel
