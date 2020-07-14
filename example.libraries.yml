@@ -36,15 +36,6 @@ catchify-modal:
   dependencies:
     - ${example}/catchify-core
 
-catchify-carousel:
-  css:
-    base:
-      node_modules/catchify-core/dist/_carousel.css: {}
-  js:
-    node_modules/catchify-core/dist/carousel.js: {}
-  dependencies:
-    - ${example}/catchify-core
-
 catchify-buttons:
   css:
     base:
