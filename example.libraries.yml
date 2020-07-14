@@ -16,7 +16,7 @@ catchify-form:
   js:
     node_modules/catchify-core/dist/forms.js: {}
   dependencies:
-    - example/catchify-core
+    - ${example}/catchify-core
 
 catchify-tabs:
   css:
@@ -25,7 +25,7 @@ catchify-tabs:
   js:
     node_modules/catchify-core/dist/tabs.js: {}
   dependencies:
-    - example/catchify-core
+    - ${example}/catchify-core
 
 catchify-modal:
   css:
@@ -34,7 +34,7 @@ catchify-modal:
   js:
     node_modules/catchify-core/dist/modal.js: {}
   dependencies:
-    - example/catchify-core
+    - ${example}/catchify-core
 
 catchify-carousel:
   css:
@@ -43,7 +43,7 @@ catchify-carousel:
   js:
     node_modules/catchify-core/dist/carousel.js: {}
   dependencies:
-    - example/catchify-core
+    - ${example}/catchify-core
 
 catchify-buttons:
   css:
@@ -52,11 +52,11 @@ catchify-buttons:
   js:
     node_modules/catchify-core/dist/buttons.js: {}
   dependencies:
-    - example/catchify-core
+    - ${example}/catchify-core
 
 catchify-messages:
   css:
     base:
       node_modules/catchify-core/dist/_messages.css: {}
   dependencies:
-    - example/catchify-core
+    - ${example}/catchify-core
