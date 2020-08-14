@@ -9,3 +9,12 @@ function catchify_theme_suggestions_form_element_alter(array &$suggestions, arra
   // Add an interface-language specific suggestion to all theme hooks.
   $suggestions[] = $hook . '__' . $type;
 }
+
+/**
+ * Implements hook_preprocess_media_oembed_iframe().
+ */
+function catchify_preprocess_media_oembed_iframe(array &$variables) {
+  $url = \Drupal::request()->query->get('url');
+  $provider = \Drupal::service('media.oembed.url_resolver')->getProviderByUrl($url);
+  $variables['provider'] = strtolower($provider->getName());
+}
