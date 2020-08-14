@@ -3,7 +3,7 @@ type: theme
 description: Catchify theme
 base theme: stable
 package: Catch
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 regions:
   header: 'Header'
   help: 'Help'
@@ -13,9 +13,3 @@ stylesheets-remove:
   - core/themes/stable/css/system/components/container-inline.module.css
 features:
   - favicon
-libraries:
-  - catchify/catchify-core
-  - catchify/catchify-form
-  - catchify/catchify-tabs
-  - catchify/catchify-buttons
-  - catchify/catchify-messages

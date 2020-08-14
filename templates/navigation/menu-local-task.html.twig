@@ -19,16 +19,15 @@
   'tab'
 ] %}
 
-{# If active, add active class to link #}
-{% if is_active %}
-  {% set class = link['#options']|merge({
-    'attributes': {
-      'class': [
-        'active'
-      ]
-    }
-  }) %}
-  {% set link = link|merge({ ('#options'): class}) %}
-{% endif %}
+{% set linkAttributes = link['#options']|merge({
+  'attributes': {
+    'target': '_self',
+    'class': [
+      is_active ? 'active',
+    ]
+  }
+}) %}
+
+{% set link = link|merge({ '#options': linkAttributes}) %}
 
 <li{{ attributes.addClass(classes) }}>{{ link }}</li>
