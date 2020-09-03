@@ -4,7 +4,7 @@
     "type": "drupal-theme",
     "license": "MIT",
     "minimum-stability": "dev",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "authors": [
         {
             "name": "Alberto Contreras",
@@ -18,12 +18,10 @@
       }
     ],
     "post-install-cmd": [
-      "echo \"Installing Catchify requirements\"",
-      "npm install"
+      "echo \"Installing Catchify requirements\""
     ],
     "post-update-cmd": [
-      "echo \"Updating Catchify requirements\"",
-      "npm update"
+      "echo \"Updating Catchify requirements\""
     ],
     "require": {}
 }

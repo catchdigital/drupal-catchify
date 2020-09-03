@@ -18,3 +18,12 @@ function catchify_preprocess_media_oembed_iframe(array &$variables) {
   $provider = \Drupal::service('media.oembed.url_resolver')->getProviderByUrl($url);
   $variables['provider'] = strtolower($provider->getName());
 }
+
+/**
+ * Implement self-theme directory until this bug is fixed.
+ * https://www.drupal.org/project/drupal/issues/3049414
+ */
+function catchify_preprocess(array &$variables) {
+  $handler = \Drupal::service('theme_handler');
+  $variables['self_directory'] = $handler->getTheme('catchify')->getPath();
+}
