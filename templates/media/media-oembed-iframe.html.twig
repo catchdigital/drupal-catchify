@@ -12,12 +12,12 @@
     <css-placeholder token="{{ placeholder_token }}">
     {% if provider == 'youtube' %}
       <script src="//youtube.com/player_api"></script>
-      <script src="/{{ directory }}/js/oembed/{{ provider }}.js"></script>
+      <script src="/{{ self_directory }}/js/oembed/{{ provider }}.js"></script>
     {% elseif provider == 'vimeo' %}
       <script src="//player.vimeo.com/api/player.js"></script>
-      <script src="/{{ directory }}/js/oembed/{{ provider }}.js"></script>
+      <script src="/{{ self_directory }}/js/oembed/{{ provider }}.js"></script>
     {% else %}
-      <script src="/{{ directory }}/js/oembed/html5.js"></script>
+      <script src="/{{ self_directory }}/js/oembed/html5.js"></script>
     {% endif %}
   </head>
   <body style="margin: 0">
