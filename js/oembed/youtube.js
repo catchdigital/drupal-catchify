@@ -18,7 +18,9 @@ window.video = {
     iframe.src = youtubeURL;
 
     // Create video instance
-    this.video = new YT.Player(iframe, {});
+    if (YT.Player) {
+      this.video = new YT.Player(iframe, {});
+    }
   },
 
   pause: function () {
