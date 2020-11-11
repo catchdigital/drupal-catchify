@@ -1,0 +1,22 @@
+name: THEMENAME
+type: theme
+description: THEMENAME theme
+base theme: stable
+core_version_requirement: ^8.8 || ^9
+regions:
+  header: 'Header'
+  help: 'Help'
+  content: 'Content'
+  footer: 'Footer'
+stylesheets-remove:
+  - core/themes/stable/css/system/components/container-inline.module.css
+features:
+  - favicon
+libraries:
+  - THEMENAME/catchify-core
+  - THEMENAME/catchify-form
+  - THEMENAME/catchify-tabs
+  - THEMENAME/catchify-buttons
+  - THEMENAME/catchify-messages
+  - THEMENAME/catchify-modal
+  - THEMENAME/catchify-carousel
