@@ -1,7 +1,4 @@
 catchify-core:
-  css:
-    base:
-      node_modules/catchify-core/dist/_base.css: {}
   js:
     node_modules/catchify-core/dist/bundle.js: {}
   dependencies:
@@ -9,45 +6,16 @@ catchify-core:
     - core/drupal
     - core/drupalSettings
 
-catchify-form:
-  css:
-    base:
-      node_modules/catchify-core/dist/_forms.css: {}
+catchify-components:
   js:
     node_modules/catchify-core/dist/forms.js: {}
-  dependencies:
-    - ${example}/catchify-core
-
-catchify-tabs:
-  css:
-    base:
-      node_modules/catchify-core/dist/_tabs.css: {}
-  js:
     node_modules/catchify-core/dist/tabs.js: {}
-  dependencies:
-    - ${example}/catchify-core
-
-catchify-modal:
-  css:
-    base:
-      node_modules/catchify-core/dist/_modal.css: {}
-  js:
     node_modules/catchify-core/dist/modal.js: {}
-  dependencies:
-    - ${example}/catchify-core
-
-catchify-buttons:
-  css:
-    base:
-      node_modules/catchify-core/dist/_buttons.css: {}
-  js:
     node_modules/catchify-core/dist/buttons.js: {}
   dependencies:
-    - ${example}/catchify-core
+    - THEMENAME/catchify-core
 
-catchify-messages:
+build:
   css:
     base:
-      node_modules/catchify-core/dist/_messages.css: {}
-  dependencies:
-    - ${example}/catchify-core
+      build/styles.css: {}

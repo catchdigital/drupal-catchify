@@ -1,0 +1,16 @@
+// Set the default variables
+@import 'includes/variables';
+
+// Add materialise require modules
+@import '@catchdigital/catchify/sass/includes/includes';
+@import '@catchdigital/catchify/sass/includes/base';
+
+// Other modules are optional
+@import '@catchdigital/catchify/components/buttons/index';
+@import '@catchdigital/catchify/components/forms/index';
+@import '@catchdigital/catchify/sass/entrypoint/_messages';
+@import '@catchdigital/catchify/components/modal/index';
+@import '@catchdigital/catchify/components/tabs/index';
+
+// Helpers always come last to ensure they take effect
+// @import 'helpers/index';

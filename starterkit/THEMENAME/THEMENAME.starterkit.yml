@@ -14,9 +14,5 @@ features:
   - favicon
 libraries:
   - THEMENAME/catchify-core
-  - THEMENAME/catchify-form
-  - THEMENAME/catchify-tabs
-  - THEMENAME/catchify-buttons
-  - THEMENAME/catchify-messages
-  - THEMENAME/catchify-modal
-  - THEMENAME/catchify-carousel
+  - THEMENAME/catchify-components
+  - THEMENAME/build
