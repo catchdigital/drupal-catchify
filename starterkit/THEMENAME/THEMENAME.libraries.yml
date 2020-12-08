@@ -11,7 +11,6 @@ catchify-components:
     node_modules/catchify-core/dist/forms.js: {}
     node_modules/catchify-core/dist/tabs.js: {}
     node_modules/catchify-core/dist/modal.js: {}
-    node_modules/catchify-core/dist/buttons.js: {}
   dependencies:
     - THEMENAME/catchify-core
 
