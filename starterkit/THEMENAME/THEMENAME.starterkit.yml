@@ -1,7 +1,7 @@
 name: THEMENAME
 type: theme
 description: THEMENAME theme
-base theme: stable
+base theme: catchify
 core_version_requirement: ^8.8 || ^9
 regions:
   header: 'Header'
