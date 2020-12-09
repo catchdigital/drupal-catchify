@@ -1,0 +1,20 @@
+catchify-core:
+  js:
+    node_modules/catchify-core/dist/bundle.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+catchify-components:
+  js:
+    node_modules/catchify-core/dist/forms.js: {}
+    node_modules/catchify-core/dist/tabs.js: {}
+    node_modules/catchify-core/dist/modal.js: {}
+  dependencies:
+    - THEMENAME/catchify-core
+
+build:
+  css:
+    base:
+      build/styles.css: {}
