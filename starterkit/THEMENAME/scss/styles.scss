@@ -1,0 +1,16 @@
+// Set the default variables
+// @import 'includes/variables';
+
+// Add materialise require modules
+@import 'node_modules/catchify-core/sass/includes/includes';
+@import 'node_modules/catchify-core/sass/base/base';
+
+// Other modules are optional
+@import 'node_modules/catchify-core/sass/components/buttons/index';
+@import 'node_modules/catchify-core/sass/components/forms/index';
+@import 'node_modules/catchify-core/sass/entrypoints/_messages';
+@import 'node_modules/catchify-core/sass/components/modal/index';
+@import 'node_modules/catchify-core/sass/components/tabs/index';
+
+// Helpers always come last to ensure they take effect
+// @import 'helpers/index';

@@ -1,6 +1,6 @@
 {
-  "name": "catchify-drupal",
-  "description": "Catchify drupal theme",
+  "name": "THEMENAME",
+  "description": "THEMENAME drupal theme",
   "scripts": {
     "build": "npm run format:css && npm run build:css && npm run format:js && npm run build:js",
     "format:css": "node ./node_modules/catchify-core/scripts/format.js ./node_modules './sass/**/*.scss'",
@@ -12,7 +12,7 @@
   "author": "support@catchdigital.com",
   "license": "MIT",
   "dependencies": {
-    "catchify-core": "^3.0.13"
+    "catchify-core": "^3.2.0"
   },
   "browserify": {
     "transform": [
