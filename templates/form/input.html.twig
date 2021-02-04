@@ -10,5 +10,5 @@
  * @see template_preprocess_input()
  */
 #}
-<input {{ attributes.addClass('validate') }} />
+<input{{ attributes.addClass('validate').setAttribute('tabindex', '0') }} />
 {{ children }}
