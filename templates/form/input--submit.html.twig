@@ -14,11 +14,9 @@
   set submit_classes = [
     'btn',
     description_display == 'invisible' ? 'visually-hidden',
-    'waves-effect',
-    'waves-light'
   ]
 %}
-<button {{ attributes.addClass(submit_classes) }}>
+<button{{ attributes.addClass(submit_classes).setAttribute('tabindex', '0') }}>
   {{ attributes.value }}
   {{ children }}
 </button>
