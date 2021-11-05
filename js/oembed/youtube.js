@@ -7,13 +7,13 @@
 window.video = {
   video: null,
 
-  init: function() {
+  init: function () {
     var iframe = document.querySelector('iframe');
 
     // Enable js api
     var domain = window.location.origin;
     var youtubeURL = String(iframe.src);
-    youtubeURL = youtubeURL + "&enablejsapi=1";
+    youtubeURL = youtubeURL + '&enablejsapi=1';
     youtubeURL = youtubeURL + `&origin=${domain}`;
     iframe.src = youtubeURL;
 
@@ -27,17 +27,45 @@ window.video = {
     if (!this.video) {
       this.init();
     }
-    this.video.pauseVideo();
+    this.poll(() => {
+      try {
+        this.video.pauseVideo();
+        return true;
+      } catch {
+        return false;
+      }
+    });
   },
 
   play: function () {
     if (!this.video) {
       this.init();
     }
-    this.video.playVideo();
+    this.poll(() => {
+      try {
+        this.video.playVideo();
+        return true;
+      } catch {
+        return false;
+      }
+    });
   },
+
+  poll: function (fn) {
+    var attempts = 0;
+    var maxAttempts = 25;
+    var interval = 100;
+    (function p() {
+      if (fn()) {
+        return;
+      } else if (attempts < maxAttempts) {
+        attempts++;
+        setTimeout(p, interval);
+      }
+    })();
+  }
 };
 
-window.onYouTubePlayerAPIReady = function() {
+window.onYouTubePlayerAPIReady = function () {
   window.video.init();
-}
+};
