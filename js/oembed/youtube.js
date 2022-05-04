@@ -6,27 +6,24 @@
  'use strict';
  window.video = {
    video: null,
- 
+
    init: function () {
      var iframe = document.querySelector('iframe');
- 
+
      // Enable js api
      var domain = window.location.origin;
      var youtubeURL = String(iframe.src);
      youtubeURL = youtubeURL + '&enablejsapi=1';
      youtubeURL = youtubeURL + `&origin=${domain}`;
      iframe.src = youtubeURL;
- 
+
      // Create video instance
      if (YT.Player) {
        this.video = new YT.Player(iframe, {});
      }
    },
- 
+
    pause: function () {
-     if (!this.video) {
-       this.init();
-     }
      var _this = this;
      this.poll(function () {
        try {
@@ -37,11 +34,8 @@
        }
      });
    },
- 
+
    play: function () {
-     if (!this.video) {
-       this.init();
-     }
      var _this = this;
      this.poll(function () {
        try {
@@ -52,7 +46,7 @@
        }
      });
    },
- 
+
    poll: function (fn) {
      var attempts = 0;
      var maxAttempts = 25;
@@ -67,8 +61,7 @@
      })();
    }
  };
- 
+
  window.onYouTubePlayerAPIReady = function () {
    window.video.init();
  };
- 
