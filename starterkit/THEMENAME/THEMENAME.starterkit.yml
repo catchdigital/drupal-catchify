@@ -2,14 +2,12 @@ name: THEMENAME
 type: theme
 description: THEMENAME theme
 base theme: catchify
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^9 || ^10
 regions:
   header: 'Header'
   help: 'Help'
   content: 'Content'
   footer: 'Footer'
-stylesheets-remove:
-  - core/themes/stable/css/system/components/container-inline.module.css
 features:
   - favicon
 libraries:
